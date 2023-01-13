@@ -1,0 +1,13 @@
+[package]
+name = "blush"
+version = "0.1.0"
+edition = "2021"
+authors = ["Kasra Ferdowsi <kferdowsifard@gmail.com>"]
+readme = "README.md"
+
+[lib]
+# The `lib` artifact is needed for the standalone target
+crate-type = ["cdylib"]
+
+[dependencies]
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug" }
